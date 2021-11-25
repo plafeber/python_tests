@@ -1,0 +1,38 @@
+import random
+spatie = ' '
+hoofdpersonen = ['Emilia', 'Abby', 'Seth', 'Jim', 'de vader van Emilia']
+voornaamwoorden = {
+  'Emilia':'ze',
+  'Abby':'ze',
+  'Seth':'hij',
+  'Jim':'hij',
+  'de vader van Emilia':'hij'
+}
+hoofdpersoon = random.choice(hoofdpersonen)
+hoofdpersonen.remove(hoofdpersoon)
+voornaamwoord = voornaamwoorden[hoofdpersoon]
+print('Mijn verhaal gaat over ' + hoofdpersoon + '.')
+ 
+activiteiten = ['boodschappen doen', 'verhuizen', 'Facebooken']
+activiteit = random.choice(activiteiten)
+print(voornaamwoord.capitalize() + ' gaat ' + activiteit + '.')
+ 
+vervoersmiddelen = ['fietsen', 'lopen', 'huppelen']
+vervoer = random.choice(vervoersmiddelen)
+print('Daarna gaat '+ voornaamwoord + spatie + vervoer + ' naar school.')
+ 
+activiteiten_na_school = ['winkelen', 'op Instagram', 'Fortnite spelen']
+na_school = random.choice(activiteiten_na_school)
+activiteiten_na_school.remove(na_school)
+print('Na school gaat ' + voornaamwoord + ' ook nog even ' + na_school + '.')
+ 
+na_school2 = random.choice(activiteiten_na_school)
+print('En daarna '+ na_school2 + '.')
+ 
+#in dit stuk verhaal komt een nieuwe hoofdpersoon ten tonele!
+ 
+hoofdpersoon_twee = random.choice(hoofdpersonen)
+print('Maar in dit verhaal speelt ' + hoofdpersoon_twee + ' ook mee!')
+voornaamwoord_twee = voornaamwoorden[hoofdpersoon_twee]
+ 
+print(voornaamwoord_twee.capitalize() + ' gaat ' + activiteit + '.')
